@@ -22,11 +22,11 @@ const Search = ({ mode }) => {
                 </button>
             </span>
 
-            <div className="w-72">
+            <div className="w-72 md:w-fit xl:w-72">
                 <input
                     type="search"
                     name="q"
-                    className={`w-full py-3 px-12 text-sm bg-transparent border rounded-md border-orange border-opacity-40 focus:outline-none focus:text-gray-900`}
+                    className={`w-full md:w-fit xl:w-full py-3 pl-12 text-sm bg-transparent border rounded-md border-orange border-opacity-40 focus:outline-none focus:text-gray-900`}
                     placeholder="Search Companies, Products, etc"
                     autoComplete="off"
                 />

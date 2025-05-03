@@ -115,7 +115,7 @@ export default function Header() {
             <>
               <MobileHeader open={open} setOpen={setOpen} walletAddress={walletAddress} walletConnect={walletConnect} />
 
-              <div className="flex items-center justify-between w-full md:w-1/2">
+              <div className="flex items-center justify-between  w-full md:w-fit xl:w-1/2">
                 <div className="items-center flex">
                   <Link href="/">
                     <a
@@ -165,7 +165,7 @@ export default function Header() {
                     />
                   </button>
 
-                  <div className="hidden md:flex">
+                  <div className="hidden md:flex whitespace-nowrap">
                     <NavLink to="/">Explore</NavLink>
                     <NavLink to="/">Stats</NavLink>
                     <NavLink to="/create-item">Create NFT</NavLink>
@@ -176,7 +176,7 @@ export default function Header() {
                   </div>
                 </div>
               </div>
-              <div className="items-center justify-between hidden w-1/2 px-6 md:flex">
+              <div className="items-center justify-between hidden w-1/2 md:w-auto xl:w-1/2 px-6 md:flex">
                 <Search />
                 {/* <Button
               type="button"
@@ -188,7 +188,7 @@ export default function Header() {
                 </a>
               </Link>
             </Button> */}
-                <button className="btn-chain">
+                <button className="btn-chain mx-0 md:mx-4 flex items-center justify-center min-w-fit">
                   {blockchain === 'Ethereum' && <img src="assets/icons/ethereum.svg" alt="" />}
                   {blockchain === 'Binance' && <img src="assets/icons/bsc.svg" alt="" />}
                   {blockchain === 'Tezos' && <img src="assets/icons/tezos.png" style={{ width: "28px", height: "28px" }} alt="" />}
@@ -197,7 +197,7 @@ export default function Header() {
                 </button>
                 <Button
                   type="button"
-                  className="rounded-md py-2.5 px-9 text-lg border border-solid border-orange text-orange"
+                  className="rounded-md py-2.5 px-9 text-lg whitespace-nowrap border border-solid border-orange text-orange"
                   onClick={() => walletConnect()}
                 >
                   <span>{walletAddress !== '' && walletAddress !== null ? walletAddress.substr(0, 6) + '...' + walletAddress.substr(walletAddress.length - 4, 4) : 'Connect Wallet'}</span>
