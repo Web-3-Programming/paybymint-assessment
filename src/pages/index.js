@@ -111,10 +111,10 @@ const Home = () => {
   return (
     <Fragment>
       <section className="flex flex-col px-8 py-14">
-        <div className="mb-24 flex flex-col md:flex-row gap-y-9">
-          <div className="flex flex-col flex-1 items-center md:items-start justify-start" >
-            <p className="mb-6 font-medium text-center md:text-left text-trout text-4xl md:text-15xl max-w-[600px]">Transform your Customers into Investors</p>
-            <p className="text-lg text-pale-sky text-center md:text-left mb-14">Internet businesses of all sizes - from startups to large enterprises use paybymint as a payment solution to accept crypto payments, track orders and send payouts on the blockchain.
+        <div className="mb-24 flex flex-col lg:flex-row gap-y-9">
+          <div className="flex flex-col flex-1 items-center lg:items-start justify-start" >
+            <p className="mb-6 font-medium text-center lg:text-left text-trout text-4xl md:text-15xl max-w-[600px]">Transform your Customers into Investors</p>
+            <p className="text-lg text-pale-sky text-center lg:text-left mb-14">Internet businesses of all sizes - from startups to large enterprises use paybymint as a payment solution to accept crypto payments, track orders and send payouts on the blockchain.
               Businesses are able to accept crypto payment when customers mint a fraction of their NFT rather than direct payment. </p>
             <div className="flex items-center text-lg justify-around md:justify-start w-full md:w-auto">
               <Link href="https://calendly.com/paybymint" passHref><a target="_blank" rel="noopener noreferrer"><Button className="py-4 text-white px-10 whitespace-nowrap md:px-14 rounded-3xl bg-orange">Schedule a Demo</Button></a></Link>
