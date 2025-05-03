@@ -165,7 +165,7 @@ export default function Header() {
                     />
                   </button>
 
-                  <div className="hidden md:flex whitespace-nowrap">
+                  <div className="hidden lg:flex whitespace-nowrap">
                     <NavLink to="/">Explore</NavLink>
                     <NavLink to="/">Stats</NavLink>
                     <NavLink to="/create-item">Create NFT</NavLink>
@@ -176,7 +176,7 @@ export default function Header() {
                   </div>
                 </div>
               </div>
-              <div className="items-center justify-between hidden w-1/2 md:w-auto xl:w-1/2 px-6 md:flex">
+              <div className="items-center ml-auto justify-between md:justify-evenly xl:justify-between hidden w-1/2 md:w-auto xl:w-1/2 px-6 md:flex">
                 <Search />
                 {/* <Button
               type="button"
