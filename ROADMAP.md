@@ -20,8 +20,8 @@
 - [x] Transfer logic for purchase and cancel
 - [x] Fetch and display NFTs via `getSales()`
 - [~] Auto-approval for marketplace contract
-- [] Secondary listing flow (resale)
-- [] Backend indexer for sales tracking
+- [ ] Secondary listing flow (resale)
+- [ ] Backend indexer for sales tracking
 
 ## Phase 2: Creator Tools & Metadata
 > Goal: Let creators launch NFTs with IPFS metadata and price configuration.
