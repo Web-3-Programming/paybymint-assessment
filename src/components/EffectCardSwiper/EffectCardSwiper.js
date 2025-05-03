@@ -39,6 +39,7 @@ const EffectCardSwiper = ({ items }) => {
                     height={24}
                 />
             </div>
+            {items.length > 0 ? 
             <Swiper
                 effect={"cards"}
                 grabCursor={true}
@@ -63,6 +64,11 @@ const EffectCardSwiper = ({ items }) => {
                 ))}
 
             </Swiper>
+            :
+            <div className="flex text-trout text-2xl items-center text-center justify-center w-full h-[435px] rounded-[10px] bg-[#F5F3F6] px-10">
+                No items currently in your collection
+            </div>
+            }
         </div>)
 }
 
